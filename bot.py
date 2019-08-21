@@ -10,11 +10,13 @@ bot = commands.Bot ("c.")
 async def on_ready():
     print("Bot online")
 
-@bot.command()
-asynx def spam(ctx):
-embed = discord.Embed (
-embed.add.field(name=spam, value="This is true spam!", inline=False)
 
+@bot.command()
+async def spam(ctx):
+    embed = discord.Embed(colour=0x00FF00)
+    embed.add_field(name="Ping", value='sapm')
+    embed.set_footer(text=f"Request by {ctx.author}", icon_url=ctx.author.avatar_url)
+    await ctx.send(embed=embed)
 
 
 @bot.command(pass_context=True)
