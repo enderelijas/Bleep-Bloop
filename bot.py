@@ -10,7 +10,7 @@ bot = commands.Bot ("c.")
 async def on_ready():
     print("Bot online")
 
-@bot.command() 
+@bot.command(ctx):
 asynx def spam
 embed = discord.Embed (
 embed.add.field(name=spam, value="This is true spam!", inline=False)
