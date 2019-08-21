@@ -10,10 +10,10 @@ bot = commands.Bot ("c.")
 async def on_ready():
     print("Bot online")
 
-@bot.event
-async def creeper(ctx):
-    if "creeper" in message.content:
-  await message.channel.send ('Aww Man!') 
+@bot.command() 
+asynx def spam
+embed = discord.Embed (
+embed.add.field(name=spam, value="This is true spam!", inline=False)
 
 
 
