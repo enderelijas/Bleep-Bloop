@@ -11,8 +11,10 @@ async def on_ready():
     print("Bot online")
 
 @bot.event
-async def on_message(ctx):
-await ctx.send ("no u") 
+async def creeper(ctx):
+  if "creeper" in message.content:
+  await channel.send ('Aww Man!') 
+
 
 
 @bot.command(pass_context=True)
