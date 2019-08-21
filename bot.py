@@ -10,6 +10,10 @@ bot = commands.Bot ("c.")
 async def on_ready():
     print("Bot online")
 
+@bot.event
+async def on_message(ctx):
+await ctx.send ("no u") 
+
 
 @bot.command(pass_context=True)
 async def ping(ctx):
