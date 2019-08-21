@@ -13,7 +13,7 @@ async def on_ready():
 @bot.event
 async def creeper(ctx):
   if "creeper" in message.content:
-  await channel.send ('Aww Man!') 
+  await message.channel.send ('Aww Man!') 
 
 
 
